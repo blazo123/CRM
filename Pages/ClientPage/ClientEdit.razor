@@ -1,0 +1,51 @@
+﻿@using CRM.Pages.Inherits
+@page "/clientedit/{nip}";
+@inherits ClientEditBase
+
+<h3>ClientEdit</h3>
+
+
+<EditForm Model="@Client" OnValidSubmit="@UpdateClient">
+    <DataAnnotationsValidator />
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Name" @bind-value="Client.Name">
+      <ValidationMessage For="(()=>Client.Name)" />
+    </div>
+    <div class="form-group col-md-6">
+      <label for="nip">NIP</label>
+      <input type="text" class="form-control" id="nip" placeholder="NIP" @bind-value="Client.NIP">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="regon">REGON</label>
+    <input type="text" class="form-control" id="regon" placeholder="REGON" @bind-value="Client.REGON">
+  </div>
+  <div class="form-group">
+    <label for="streetname">StreetName</label>
+    <input type="text" class="form-control" id="streetname" placeholder="StreetName" @bind-value="Client.StreetName">
+  </div>
+    <div class="form-group">
+    <label for="streetnumber">StreetNumber</label>
+    <input type="text" class="form-control" id="streetnumber" placeholder="StreetName" @bind-value="Client.StreetNumber">
+  </div>
+    <div class="form-group">
+    <label for="apartmentnumber">ApartmentNumber</label>
+    <input type="text" class="form-control" id="apartmentnumber" placeholder="StreetName" @bind-value="Client.ApartmentNumber">
+  </div>
+     <div class="form-group">
+    <label for="postcode">PostCode</label>
+    <input type="text" class="form-control" id="postcode" placeholder="StreetName" @bind-value="Client.PostCode">
+  </div>
+      <div class="form-group">
+    <label for="city">City</label>
+    <input type="text" class="form-control" id="city" placeholder="StreetName" @bind-value="Client.City">
+  </div>
+    <div class="form-group">
+    <label for="country">Country</label>
+    <input type="text" class="form-control" id="country" placeholder="StreetName" @bind-value="Client.Country">
+  </div>
+  <button type="submit" class="btn btn-success">Update</button>
+  <button type="button" class="btn btn-primary" @onclick="() => NavigationToMainPage()">Back to main page</button>
+</EditForm>

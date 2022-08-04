@@ -1,0 +1,46 @@
+﻿@using CRM.Pages.Inherits
+@page "/clientadd";
+@inherits ClientAddBase
+
+<h3>Add Client</h3>
+
+<EditForm Model="@Client" OnValidSubmit="AddClient">
+   <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Name" @bind-value="Client.Name">
+      <ValidationMessage For="(()=>Client.Name)" />
+    </div>
+    <div class="form-group col-md-6">
+      <label for="nip">NIP</label>
+      <input type="text" class="form-control" id="nip" placeholder="NIP" @bind-value="Client.NIP">
+      <ValidationMessage For="(()=>Client.NIP)" />
+    </div>
+    <div class="form-group col-md-6">
+      <label for="regon">REGON</label>
+      <input type="text" class="form-control" id="nip" placeholder="REGON" @bind-value="Client.REGON">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="streetName">Street Name</label>
+      <input type="text" class="form-control" id="streetName" placeholder="StreetName" @bind-value="Client.StreetName">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="streetNumber">Street Number</label>
+      <input type="text" class="form-control" id="streetNumber" placeholder="StreetNumber" @bind-value="Client.StreetNumber">
+    </div>
+     <div class="form-group col-md-6">
+      <label for="postCode">Post Code</label>
+      <input type="text" class="form-control" id="postCode" placeholder="PostCode" @bind-value="Client.PostCode">
+    </div>
+     <div class="form-group col-md-6">
+      <label for="city">City</label>
+      <input type="text" class="form-control" id="city" placeholder="City" @bind-value="Client.City">
+    </div>
+     <div class="form-group col-md-6">
+      <label for="country">Country</label>
+      <input type="text" class="form-control" id="country" placeholder="Country" @bind-value="Client.Country">
+    </div>
+  </div>
+   <button type="submit" class="btn btn-success">Add Client</button>
+   <button type="button" class="btn btn-primary" @onclick="() => NavigationToMainPage()">Back to main page</button>
+</EditForm>

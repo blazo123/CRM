@@ -1,0 +1,148 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CRM
+build_property.RootNamespace = CRM
+build_property.ProjectDir = D:\Apki\BLAZOR\CRM\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Apki\BLAZOR\CRM
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Apki/BLAZOR/CRM/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Helpers/Confirm.razor]
+build_metadata.AdditionalFiles.TargetPath = SGVscGVyc1xDb25maXJtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Pages/ClientPage/ClientAdd.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50UGFnZVxDbGllbnRBZGQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Pages/ClientPage/ClientDelete.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50UGFnZVxDbGllbnREZWxldGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Pages/ClientPage/ClientDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50UGFnZVxDbGllbnREZXRhaWxzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Pages/ClientPage/ClientEdit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50UGFnZVxDbGllbnRFZGl0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Pages/ClientPage/ClientsList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50UGFnZVxDbGllbnRzTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Pages/ContactPage/ContactAdd.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdFBhZ2VcQ29udGFjdEFkZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Pages/ContactPage/ContactEdit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdFBhZ2VcQ29udGFjdEVkaXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Pages/ContactPage/ContactList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdFBhZ2VcQ29udGFjdExpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Shared/LoginDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-07md7x04w0
+
+[D:/Apki/BLAZOR/CRM/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-n0qv22z9b9
+
+[D:/Apki/BLAZOR/CRM/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Apki/BLAZOR/CRM/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

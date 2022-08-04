@@ -1,0 +1,29 @@
+﻿@page "/contactadd"
+@using CRM.Pages.ContactPage.ContactBase
+@inherits ContactAddBase;
+
+<h3>ContactAdd</h3>
+
+<EditForm Model="@Contact" OnValidSubmit="AddContact">
+    <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Name" @bind-value="Contact.Name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="phone">Phone</label>
+      <input type="text" class="form-control" id="phoneNumber" placeholder="PhoneNumber" @bind-value="Contact.PhoneNumber">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="email">Email</label>
+      <input type="text" class="form-control" id="email" placeholder="Email" @bind-value="Contact.Email">
+    </div>
+     <div class="form-group col-md-6">
+      <label for="clientId">ClientId</label>
+      <input type="number" class="form-control" id="clientId" placeholder="ClientId" @bind-value="Contact.ClientId">
+    </div>
+  </div>
+   <button type="submit" class="btn btn-success">Add Contact</button>
+   <button type="button" class="btn btn-primary" @onclick="() => NavigationToMainPage()">Back to main page</button>
+</EditForm>
+

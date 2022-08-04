@@ -1,0 +1,56 @@
+﻿@page "/contacts";
+
+<h3>List of contacts :</h3>
+
+
+@using CRM.Pages.ContactPage.ContactBase
+@inherits ContactListBase
+
+@if (Contacts == null)
+{
+    <div class="loader"></div>
+}
+else
+{
+    <a href="@($"/contactadd")" class="btn btn-primary">Add new contact</a>
+    <table class="table">
+
+    <thead>
+    <tr>
+      <th scope="col">Contact Name</th>
+      <th scope="col">Contact Email</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">Client Name</th>
+       <th scope="col">Option</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach(var contact in Contacts)
+    {
+      <tr>
+      <td>@contact.Name</td>
+      <td>@contact.Email</td>
+      <td>@contact.PhoneNumber</td>
+      <td>@contact.Client.Name</td>
+      <td>
+          <div class="card-footer text-center">
+              <a href="@($"contactdetails/{contact.Id}")" class="btn btn-primary m-1">View</a>
+              <a href="@($"contactedit/{contact.Id}")" class="btn btn-primary m-1">Edit</a>
+              <button type="button" class="btn btn-danger m-1"
+                        @onclick="() => Delete_Click(contact.Id)">
+                    Delete
+              </button>
+          </div>
+      </td>
+    </tr>
+
+     }
+  </tbody>
+
+   
+</table>
+}
+@*<Confirm @ref="DeleteConfirmation" ConfirmationChanged="ConfirmDelete_Click"></Confirm>*@
+
+
+

@@ -1,0 +1,54 @@
+﻿@page "/";
+@page "/clients"
+@using CRM.Pages.Inherits
+@inherits ClientListBase
+
+
+<h3>List of clients :</h3>
+
+
+@if (Clients == null)
+{
+    <div class="loader"></div>
+}
+else
+{
+    <a href="@($"/clientadd")" class="btn btn-primary">Add new client</a>
+    <table class="table">
+
+    <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">NIP</th>
+      <th scope="col">City</th>
+      <th scope="col">Option</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach(var client in Clients)
+    {
+      <tr>
+      <td>@client.Name</td>
+      <td>@client.NIP</td>
+      <td>@client.City</td>
+      <td>
+          <div class="card-footer text-center">
+              <a href="@($"clientdetails/{client.NIP}")" class="btn btn-primary m-1">View</a>
+              <a href="@($"clientedit/{client.NIP}")" class="btn btn-primary m-1">Edit</a>
+              <button type="button" class="btn btn-danger m-1"
+                        @onclick="() => Delete_ClickAsync(client.Id)">
+                    Delete
+              </button>
+          </div>
+      </td>
+    </tr>
+
+     }
+  </tbody>
+
+   
+</table>
+}
+
+
+
