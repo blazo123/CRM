@@ -1,0 +1,36 @@
+﻿@page "/contactdetails/{id}"
+@using CRM.Pages.ContactPage.ContactBase
+@inherits ContactDetailsBase
+
+@if (Contact == null || Contact.Client == null)
+{
+    <div class="loader"></div>
+}
+else
+{
+<div class="row justify-content-center m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header text-center">
+                <h1>@Contact.Name</h1>
+            </div>
+            <div class="card-body text-center">
+                <h2>@Contact.Email</h2>
+                <h2>@Contact.PhoneNumber</h2>
+
+                 <h2>@Contact.Client.Name</h2>
+                </div>
+        </div>
+        <div class="card-footer text-center">
+            <a href="/contacts" class="btn btn-primary">Back</a>
+            <a href="@($"contactedit/{Contact.Id}")" class="btn btn-primary">Edit</a>
+            <button type="button" class="btn btn-danger m-1"
+                        @onclick="() => Delete_Click(Contact.Id)">
+                    Delete
+              </button>
+        </div>
+    </div>
+</div>
+}
+
+

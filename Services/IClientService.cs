@@ -7,8 +7,8 @@ namespace CRM.Services
         Task<IEnumerable<Client>> GetClients();
         Task<Client> GetClientById(string nip);
 
-        void AddClient(Client client);
-        void UpdateClient(string nip,Client client);
+        Task<bool> AddClient(Client client);
+        Task<bool> UpdateClient(string nip,Client client);
 
         Task<bool> DeleteClient(int id);
     }

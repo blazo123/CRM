@@ -1,0 +1,59 @@
+﻿@page "/jobs";
+@using CRM.Model
+@using CRM.Pages.JobPage.JobBase
+@inherits JobListBase;
+
+
+<h3>JobList</h3>
+
+@if (Jobs == null)
+{
+    <div class="loader"></div>
+}
+else
+{
+    <a href="@($"/jobadd")" class="btn btn-primary">Add new contact</a>
+    <table class="table">
+
+    <thead>
+    <tr>
+      <th scope="col">Job Subject</th>
+      <th scope="col">Job Description</th>
+      <th scope="col">Job Type</th>
+      <th scope="col">SaleAmount</th>
+      <th scope="col">Client</th>
+       <th scope="col">Option</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach(var job in Jobs)
+    {
+      <tr>
+      <td>@job.Subject</td>
+      <td>@job.Description</td>
+      <InputSelect @bind-Value="job.Type">
+        @foreach (var type in Enum.GetValues(typeof(TypeOfJob)))
+        {
+            <option value="@type">@type</option>
+        }
+    </InputSelect>
+      <td>@job.SaleAmount</td>
+      <td>@job.Client.Name</td>
+      <td>
+          <div class="card-footer text-center">
+              <a href="@($"jobdetails/{job.Id}")" class="btn btn-primary m-1">View</a>
+              <a href="@($"jobedit/{job.Id}")" class="btn btn-primary m-1">Edit</a>
+              <button type="button" class="btn btn-danger m-1"
+                        @onclick="() => Delete_Click(job.Id)">
+                    Delete
+              </button>
+          </div>
+      </td>
+    </tr>
+
+     }
+  </tbody>
+
+   
+</table>
+}

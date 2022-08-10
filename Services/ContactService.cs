@@ -39,7 +39,7 @@ namespace CRM.Services
 
         public async Task<Contact> GetContactById(string id)
         {
-            var concact = await _context.Contacts.Where(x => x.Id == int.Parse(id)).FirstOrDefaultAsync();
+            var concact = await _context.Contacts.Include(y => y.Client).Where(x => x.Id == int.Parse(id)).FirstOrDefaultAsync();
             return concact;
         }
 
@@ -65,7 +65,7 @@ namespace CRM.Services
                 contactFromDB.Email = contact.Email;
                 contactFromDB.PhoneNumber = contact.PhoneNumber;
                 contactFromDB.Name = contact.Name;
-                contactFromDB.ClientId = contact.ClientId;
+                contactFromDB.Client.Id = contact.Client.Id;
                 contactFromDB.UpdateDate = DateTime.Now;
                 await _context.SaveChangesAsync();
 

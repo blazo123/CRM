@@ -14,16 +14,22 @@ namespace CRM.Pages.Inherits
         public NavigationManager NavigationManager { get; set; }
 
         public Client Client { get; set; } = new Client();
-        public void AddClient()
+
+        protected override Task OnInitializedAsync()
+        {
+            return base.OnInitializedAsync();
+            
+        }
+        public async Task AddClient()
         {
             Client.CreatedDate = DateTime.Now;
-            ClientService.AddClient(Client);
+            await ClientService.AddClient(Client);
 
-            NavigationManager.NavigateTo("/clients", true);
+            NavigationToMainPage();
         }
         protected void NavigationToMainPage()
         {
-            NavigationManager.NavigateTo("/clients");
+            NavigationManager.NavigateTo("/clients",true);
         }
     }
 }

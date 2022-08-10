@@ -22,11 +22,11 @@ namespace CRM.Pages.Inherits
             Client = await ClientService.GetClientById(nip);
         }
 
-        protected async void UpdateClient()
+        protected async Task UpdateClient()
         {
             if (Client.NIP != null)
             {
-                ClientService.UpdateClient(Client.NIP,Client);
+                await ClientService.UpdateClient(Client.NIP,Client);
                 NavigationManager.NavigateTo("/clients",true);
             }
         }

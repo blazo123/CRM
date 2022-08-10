@@ -31,13 +31,14 @@ namespace CRM.Services
             return clients;
         }
 
-        public async void AddClient(Client client)
+        public async Task<bool> AddClient(Client client)
         {
                 _context.Add(client);
                await _context.SaveChangesAsync();
+            return true;
         }
 
-        public async void UpdateClient(string nip,Client client)
+        public async Task<bool> UpdateClient(string nip,Client client)
         {
             //await _httpClient.PutAsJsonAsync($"api/client/{client.NIP}",client);
             var result = await _context.Clients.FirstOrDefaultAsync(x => x.NIP == nip);
@@ -54,7 +55,8 @@ namespace CRM.Services
             result.StreetNumber = client?.StreetNumber;
             result.UpdateDate = DateTime.Now;
 
-            await _context.SaveChangesAsync();                      
+            await _context.SaveChangesAsync();
+            return true;
         }
 
         public async Task<bool> DeleteClient(int id)

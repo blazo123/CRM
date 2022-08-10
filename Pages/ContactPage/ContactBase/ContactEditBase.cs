@@ -22,6 +22,7 @@ namespace CRM.Pages.ContactPage.ContactBase
         public async void UpdateContact()
         {
             await ContactService.UpdateContact(Contact);
+
             NavigationToMainPage();
         }
 

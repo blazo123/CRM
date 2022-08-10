@@ -30,7 +30,8 @@ namespace CRM.Model
             public DateTime UpdateDate { get; set; }
 
             public ICollection<Contact> Contacts { get; set; }
+            public ICollection<Job> Jobs { get; set; }
 
-        }
+    }
 }
 

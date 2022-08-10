@@ -9,7 +9,7 @@ namespace CRM.Pages.ContactPage.ContactBase
     {
         [Inject]
         public IContactService ContactService { get; set; }
-        public IEnumerable<Contact> Contacts {get; set;}
+        public IEnumerable<Contact> Contacts { get; set; }
         public ConfirmBase DeleteConfirmation { get; set; }
 
 
