@@ -27,6 +27,7 @@ builder.Services.AddTransient<IJobService, JobService>();
 builder.Services.AddDbContextPool<AppDbContext>(option =>
 {
     option.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+    
 });
 
 
@@ -43,6 +44,16 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+//using var scope = app.Services.CreateScope();
+//var dbContext = scope.ServiceProvider.GetService<AppDbContext>();
+//var pendingMigration = dbContext.Database.GetPendingMigrations();
+//if (pendingMigration.Any())
+//{
+//    dbContext.Database.Migrate();
+//}
+
+//DataGenerator.Seed(dbContext);
 
 app.UseHttpsRedirection();
 

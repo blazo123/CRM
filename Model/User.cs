@@ -4,8 +4,6 @@ namespace CRM.Model
 {
     public class User : IdentityUser
     {
-        public int DepartmentId { get; set; }
-        public Department Department { get; set; }
         public ICollection<Job> Jobs { get; set; }
     }
 }

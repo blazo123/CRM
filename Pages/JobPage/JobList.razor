@@ -19,7 +19,7 @@ else
     <tr>
       <th scope="col">Job Subject</th>
       <th scope="col">Job Description</th>
-      <th scope="col">Job Type</th>
+      @*<th scope="col">Job Type</th>*@
       <th scope="col">SaleAmount</th>
       <th scope="col">Client</th>
        <th scope="col">Option</th>
@@ -31,12 +31,12 @@ else
       <tr>
       <td>@job.Subject</td>
       <td>@job.Description</td>
-      <InputSelect @bind-Value="job.Type">
+      @*<InputSelect @bind-Value="job.Type">
         @foreach (var type in Enum.GetValues(typeof(TypeOfJob)))
         {
             <option value="@type">@type</option>
         }
-    </InputSelect>
+    </InputSelect>*@
       <td>@job.SaleAmount</td>
       <td>@job.Client.Name</td>
       <td>
