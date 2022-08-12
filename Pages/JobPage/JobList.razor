@@ -1,4 +1,5 @@
 ﻿@page "/jobs";
+
 @using CRM.Model
 @using CRM.Pages.JobPage.JobBase
 @inherits JobListBase;
@@ -13,13 +14,15 @@
 else
 {
     <a href="@($"/jobadd")" class="btn btn-primary">Add new contact</a>
+
+
     <table class="table">
 
     <thead>
     <tr>
       <th scope="col">Job Subject</th>
       <th scope="col">Job Description</th>
-      @*<th scope="col">Job Type</th>*@
+      <th scope="col">Job Type</th>
       <th scope="col">SaleAmount</th>
       <th scope="col">Client</th>
        <th scope="col">Option</th>
@@ -31,12 +34,7 @@ else
       <tr>
       <td>@job.Subject</td>
       <td>@job.Description</td>
-      @*<InputSelect @bind-Value="job.Type">
-        @foreach (var type in Enum.GetValues(typeof(TypeOfJob)))
-        {
-            <option value="@type">@type</option>
-        }
-    </InputSelect>*@
+      <td>@job.Type</td>
       <td>@job.SaleAmount</td>
       <td>@job.Client.Name</td>
       <td>

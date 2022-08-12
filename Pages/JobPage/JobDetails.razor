@@ -4,4 +4,34 @@
 
 <h3>JobDetails</h3>
 
+@if (Job == null || Job.Client == null)
+{
+    <div class="loader"></div>
+}
+else
+{
+<div class="row justify-content-center m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header text-center">
+                <h1>@Job.Subject</h1>
+            </div>
+            <div class="card-body text-center">
+                <h2>@Job.Description</h2>
+                <h2>@Job.SaleAmount</h2>
 
+                 <h2>@Job.Client.Name</h2>
+                 <h2>@Job.DateOfNextActivity</h2>
+                </div>
+        </div>
+        <div class="card-footer text-center">
+            <a href="/jobs" class="btn btn-primary">Back</a>
+            <a href="@($"jobedit/{Job.Id}")" class="btn btn-primary">Edit</a>
+            <button type="button" class="btn btn-danger m-1"
+                        @onclick="() => Delete_Click(Job.Id)">
+                    Delete
+              </button>
+        </div>
+    </div>
+</div>
+}

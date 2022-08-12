@@ -1,7 +1,45 @@
 ﻿@page "/jobedit/{id}"
+@using CRM.Model
 @using CRM.Pages.JobPage.JobBase
 @inherits JobEditBase
 
 <h3>JobEdit</h3>
 
 
+<EditForm Model="@Job" OnValidSubmit="@UpdateJob">
+    <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="subject">Subject</label>
+      <input type="text" class="form-control" id="subject" placeholder="Subject" @bind-value="Job.Subject">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="description">Description</label>
+      <input type="text" class="form-control" id="description" placeholder="Description" @bind-value="Job.Description">
+    </div>
+    <div class="form-group">
+
+        <InputSelect @bind-Value="@Job.Type" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option selected>Open this select menu</option>
+            @foreach (var type in Enum.GetValues(typeof(TypeOfJob)))
+            {
+            
+                <option value="@type">@type</option>
+            }
+        </InputSelect>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="saleAmount">SaleAmount</label>
+      <input type="number" class="form-control" id="saleAmount" placeholder="SaleAmount" @bind-value="Job.SaleAmount">
+    </div>
+     <div class="form-group col-md-6">
+      <label for="clientId">ClientId</label>
+      <input type="number" class="form-control" id="clientId" placeholder="ClientId" @bind-value="Job.ClientId">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="dateOfNextActivity">DateOfNextActivity</label>
+      <input type="date" class="form-control" id="dateOfNextActivity" placeholder="DateOfNextActivity" @bind-value="Job.DateOfNextActivity">
+    </div>
+  </div>
+   <button type="submit" class="btn btn-success">Update</button>
+   <button type="button" class="btn btn-primary" @onclick="() => NavigationToMainPage()">Back to main page</button>
+</EditForm>

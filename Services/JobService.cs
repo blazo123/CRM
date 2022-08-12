@@ -38,6 +38,7 @@ namespace CRM.Services
         public async Task<IEnumerable<Job>> GetAllJobs()
         {
             var jobs = await _context.Jobs.Include(c => c.Client).Include(u => u.User).ToListAsync();
+
             return jobs;
         }
 
